@@ -48,3 +48,7 @@ Modify the text you're looking for (Regex)  and the growl message (Parameters)
 ## Image Credit / Sources:  
 Github Icons https://octicons.github.com/  
 NPM badges https://nodei.co/
+
+## TODO:
+- [ ] Update most recent script (especially the gn one)
+- [ ] Add screenshots once I've used it for a while and have some good ones down
