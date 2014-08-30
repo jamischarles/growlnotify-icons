@@ -6,16 +6,19 @@ Helps you display growl message with fancy icons after certain terminal commands
 ## Get started
 1) Install [growlnotify](http://growl.info/downloads)
 
-2) Put this in a .bashrc or .zshrc file.
+2) Clone this repo
+
+3) Put this in a .bashrc or .zshrc file.
 ``` bash
 # --app param tells growl what apps' icon to use.
 growl () { echo $1 | growlnotify --title $2 --app iterm -m $1 } #requires growlnotify
 
 # params: $1 title  $2 msg  $3 imageName
+# Replace ~/github/growlnotify-icons/images/  with whatever folder you cloned this repo to (and the images folder therein)
 growlImg () { echo $2 | growlnotify --image ~/github/growlnotify-icons/images/$3  -t $1 -m $2 }
 ```
 
-3) Now you can either
+4) Now you can either
 - Run `growl` from terminal if you don't care about the icons. OR
 - Run `growlImg` from the terminal for messages and icons.  OR  
 - Add aliases like the following to your .bashrc or .zshrc file:
